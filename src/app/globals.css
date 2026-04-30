@@ -1,2 +1,15 @@
 @import "tailwindcss";
+ @plugin "daisyui" {
+   themes: light;
+ }
 
+ .text {
+    color: #2f2ebe;
+ }
+ .bg {
+    background-color: #2f2ebe;
+ }
+
+ .navAnimat {
+    transition: all 0.1s ease;
+ }
