@@ -35,7 +35,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-sm bg border-none text-white rounded-sm">Login</a>
+                <Link href="/auth/login" className="btn btn-sm bg border-none text-white rounded-sm">Login</Link>
             </div>
         </div>
     )
