@@ -1,15 +1,35 @@
 'use client'
+import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import Link from "next/link";
+import { toast, ToastContainer } from "react-toastify";
 
 function Register() {
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
-    // Convert FormData to plain object
-    alert(`Form submitted with: ${JSON.stringify(data, null, 2)}`);
+    const userData = Object.fromEntries(formData.entries());
+    const { data, error } = await authClient.signUp.email({
+      name: userData.name,
+      email: userData.email,
+      image: userData.image,
+      password: userData.password,
+      callbackURL: "/auth/login"
+    });
+    console.log(data, error)
+    if (error) {
+      toast.error(error.message, {
+        position: "top-right",
+        autoClose: 2000,
+      });
+    }
+    if (data) {
+      toast.success('Register Successfull', {
+        position: "top-right",
+        autoClose: 2000,
+      });
+    }
   };
   return (
     <div className='w-[90%] sm:w-[80%] lg:w-[60%] h-[95%] bg-white flex justify-center items-center p-12 rounded-3xl shadow-[0_0_12px_rgba(47,46,190,0.2)]'>
@@ -93,6 +113,7 @@ function Register() {
           </div>
         </Form>
       </div>
+      <ToastContainer />
     </div>
   );
 }

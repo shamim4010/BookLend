@@ -2,17 +2,38 @@
 import React from 'react'
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
-import Image from 'next/image';
 import Link from 'next/link';
+import { authClient } from '@/lib/auth-client';
+import { toast, ToastContainer } from 'react-toastify';
 
 function Login() {
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+    const userdata = Object.fromEntries(formData.entries());
     // Convert FormData to plain object
-    alert(`Form submitted with: ${JSON.stringify(data, null, 2)}`);
-  };
+    const { data, error } = await authClient.signIn.email({
+      email: userdata.email,
+      password: userdata.password,
+      rememberMe: true,
+      callbackURL: "/"
+    })
+
+    if (error) {
+      toast.error(error.message, {
+        position: "top-right",
+        autoClose: 2000,
+      });
+    }
+    if (data) {
+      toast.success('Login Successfull', {
+        position: "top-right",
+        autoClose: 2000,
+      });
+    }
+
+  }
+
   return (
     <div className='w-[90%] sm:w-[80%] lg:w-[60%] h-[80%] bg-white flex justify-center items-center p-12 rounded-3xl shadow-[0_0_12px_rgba(47,46,190,0.2)]'>
       <div className='flex flex-col gap-4'>
@@ -77,6 +98,7 @@ function Login() {
           </div>
         </Form>
       </div>
+      <ToastContainer />
     </div>
   );
 }

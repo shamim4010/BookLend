@@ -6,7 +6,7 @@ import { IoSend } from 'react-icons/io5'
 
 function Footer() {
     return (
-        <footer className="footer grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-base-200 text-base-content p-24">
+        <footer className="footer grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-base-200 text-base-content px-24">
             <nav className='flex flex-col gap-4'>
                 <Link href="/" className="text text-2xl flex items-center gap-2 cursor-pointer drop-shadow-[0_0_12px_rgba(47,46,190,1)]"><GiSpellBook /> BookLend</Link>
                 <p className='opacity-80 text-'>

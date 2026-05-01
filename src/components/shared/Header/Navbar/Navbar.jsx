@@ -1,4 +1,6 @@
 "use client"
+import { authClient } from '@/lib/auth-client'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
@@ -7,6 +9,10 @@ import { GiSpellBook } from 'react-icons/gi'
 
 function Navbar() {
     const pathName = usePathname()
+    const { data: session } = authClient.useSession()
+    console.log(session)
+
+    const userInfo = session?.user;
 
     const liLinks = <>
         <li><Link href='/' className={pathName === '/' ? 'text border-b-2 border-[#2f2ebe] navAnimat': ''}><FaHome /> Home</Link></li>
@@ -15,7 +21,7 @@ function Navbar() {
     </>
 
     return (
-        <div className="navbar bg-base-100 p-24">
+        <div className="navbar bg-base-100 px-24">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +41,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link href="/auth/login" className="btn btn-sm bg border-none text-white rounded-sm">Login</Link>
+                {userInfo ? <div className='flex justify-center items-center gap-4'><div className='w-10 h-10 flex justify-center items-center overflow-hidden border-2 border-indigo-500 rounded-full'><Image src={userInfo.image} width={100} height='100' alt={userInfo.name} /></div> <button className='btn border-none bg text-white '>LogOut</button></div> : <Link href="/auth/login" className="btn btn-sm bg border-none text-white rounded-sm">Login</Link>}
             </div>
         </div>
     )
