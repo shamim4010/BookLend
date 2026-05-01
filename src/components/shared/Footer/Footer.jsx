@@ -38,7 +38,7 @@ function Footer() {
                             type="text"
                             placeholder="username@site.com"
                             className="input border border-[#4d4da55e] focus:border-[#2f2ebe] focus:shadow-[0_0_4px_rgba(47,46,190,0.5)] rounded-lg join-item" />
-                        <button className="btn bg border-none join-item text-white px-6 rounded-lg ml-4"><IoSend /></button>
+                        <button className="btn bg-color border-none join-item text-white px-6 rounded-lg ml-4"><IoSend /></button>
                     </div>
                 </fieldset>
             </form>

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "title": "The Whispering Woods",
+    "author": "Elena Harper",
+    "description": "A magical tale of a young girl who discovers a hidden forest where trees can speak and ancient secrets await.",
+    "category": "Story",
+    "available_quantity": 12,
+    "image_url": "img/storyImg/story-img-1.png",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell",
+    "description": "Comprehensive introduction to AI theory and practice, covering search algorithms, neural networks, and ethical considerations.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "img/techImg/tech-img-1.png",
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "title": "Quantum Realms",
+    "author": "Dr. Sophia Chen",
+    "description": "Exploring the bizarre and fascinating world of quantum mechanics, from superposition to entanglement, for curious minds.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "img/scienceImg/science-img-1.png",
+    "rating": 4.2
+  },
+  {
+    "id": 4,
+    "title": "The Last Lighthouse Keeper",
+    "author": "James Morrison",
+    "description": "A heartwarming story of an old keeper's final year on a remote island, and the young visitor who changes his life.",
+    "category": "Story",
+    "available_quantity": 15,
+    "image_url": "img/storyImg/story-img-2.png",
+    "rating": 4.3
+  },
+  {
+    "id": 5,
+    "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "author": "Robert C. Martin",
+    "description": "Essential practices for writing readable, maintainable, and efficient code, with real-world examples.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "img/techImg/tech-img-2.png",
+    "rating": 4.9
+  },
+  {
+    "id": 6,
+    "title": "The Cosmic Blueprint",
+    "author": "Paul Davies",
+    "description": "How the laws of physics give rise to order and complexity in the universe, from galaxies to life.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "img/scienceImg/science-img-2.png",
+    "rating": 4.1
+  },
+  {
+    "id": 7,
+    "title": "Beneath the Sapphire Sky",
+    "author": "Lily Montgomery",
+    "description": "A young aviator's adventure across continents in the 1920s, filled with romance and danger.",
+    "category": "Story",
+    "available_quantity": 20,
+    "image_url": "img/storyImg/story-img-3.png",
+    "rating": 4.4
+  },
+  {
+    "id": 8,
+    "title": "The Pragmatic Programmer",
+    "author": "David Thomas & Andrew Hunt",
+    "description": "Timeless tips and techniques to become a better programmer, from debugging to automation.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "img/techImg/tech-img-3.png",
+    "rating": 4.7
+  },
+  {
+    "id": 9,
+    "title": "The Hidden Life of Trees",
+    "author": "Peter Wohlleben",
+    "description": "Reveals the complex social networks and communication systems of forests, blending biology and wonder.",
+    "category": "Science",
+    "available_quantity": 11,
+    "image_url": "img/scienceImg/science-img-3.png",
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "title": "The Clockmaker's Daughter",
+    "author": "Kate Morton",
+    "description": "A mysterious story spanning centuries, connecting an artist, a thief, and a haunted house on the Thames.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "img/storyImg/story-img-4.png",
+    "rating": 4
+  },
+  {
+    "id": 11,
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "description": "Reliable, scalable, and maintainable systems - from databases to distributed computing.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "img/techImg/tech-img-4.png",
+    "rating": 4.9
+  },
+  {
+    "id": 12,
+    "title": "The Gene: An Intimate History",
+    "author": "Siddhartha Mukherjee",
+    "description": "A sweeping journey through the history, science, and ethical implications of genetics.",
+    "category": "Science",
+    "available_quantity": 13,
+    "image_url": "img/scienceImg/science-img-4.png",
+    "rating": 4.7
+  },
+  {
+    "id": 13,
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "description": "A magical competition between two illusionists unfolds within a mysterious nocturnal circus.",
+    "category": "Story",
+    "available_quantity": 18,
+    "image_url": "img/storyImg/story-img-5.png",
+    "rating": 4.5
+  },
+  {
+    "id": 14,
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "description": "Focuses on the elegant features of JavaScript, helping developers avoid common pitfalls.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "img/techImg/tech-img-5.png",
+    "rating": 4.3
+  },
+  {
+    "id": 15,
+    "title": "Astrophysics for People in a Hurry",
+    "author": "Neil deGrasse Tyson",
+    "description": "Concise, witty explanations of the universe's biggest ideas, from the Big Bang to black holes.",
+    "category": "Science",
+    "available_quantity": 14,
+    "image_url": "img/scienceImg/science-img-5.png",
+    "rating": 4.8
+  },
+  {
+    "id": 16,
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "description": "A breathtaking retelling of the Greek myth, focusing on the deep bond between Achilles and Patroclus.",
+    "category": "Story",
+    "available_quantity": 17,
+    "image_url": "img/storyImg/story-img-6.png",
+    "rating": 4.9
+  },
+  {
+    "id": 17,
+    "title": "Site Reliability Engineering",
+    "author": "Beyer, Jones, Petoff, Murphy",
+    "description": "How Google runs production systems, with principles of automation, monitoring, and resilience.",
+    "category": "Tech",
+    "available_quantity": 2,
+    "image_url": "img/techImg/tech-img-6.png",
+    "rating": 4.6
+  },
+  {
+    "id": 18,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "Groundbreaking exploration of cosmology, black holes, and the nature of time for general readers.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "img/scienceImg/science-img-6.png",
+    "rating": 4.8
+  },
+  {
+    "id": 19,
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "description": "Narrated by Death, this is the story of a young girl in Nazi Germany who steals books and shares them.",
+    "category": "Story",
+    "available_quantity": 19,
+    "image_url": "img/storyImg/story-img-7.png",
+    "rating": 4.7
+  },
+  {
+    "id": 20,
+    "title": "You Don't Know JS: Scope & Closures",
+    "author": "Kyle Simpson",
+    "description": "Deep dive into JavaScript's core mechanics, demystifying scopes, closures, and the compiler.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "img/techImg/tech-img-7.png",
+    "rating": 4.4
+  },
+  {
+    "id": 21,
+    "title": "The Immortal Life of Henrietta Lacks",
+    "author": "Rebecca Skloot",
+    "description": "The true story of HeLa cells and the woman behind them, blending science, ethics, and humanity.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "img/scienceImg/science-img-7.png",
+    "rating": 4.5
+  },
+  {
+    "id": 22,
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "description": "A spellbinding reimagining of the witch Circe's life, from exile to empowerment.",
+    "category": "Story",
+    "available_quantity": 14,
+    "image_url": "img/storyImg/story-img-8.png",
+    "rating": 4.8
+  },
+  {
+    "id": 23,
+    "title": "The Kubernetes Book",
+    "author": "Nigel Poulton",
+    "description": "Practical guide to container orchestration with Kubernetes, suitable for beginners and pros.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "img/techImg/tech-img-8.png",
+    "rating": 4.3
+  },
+  {
+    "id": 24,
+    "title": "The Elegant Universe",
+    "author": "Brian Greene",
+    "description": "Superstrings, hidden dimensions, and the quest for a unified theory of physics.",
+    "category": "Science",
+    "available_quantity": 11,
+    "image_url": "img/scienceImg/science-img-8.png",
+    "rating": 4.6
+  },
+  {
+    "id": 25,
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "author": "Taylor Jenkins Reid",
+    "description": "Aging Hollywood icon reveals the scandalous truth behind her seven marriages and one true love.",
+    "category": "Story",
+    "available_quantity": 16,
+    "image_url": "img/storyImg/story-img-9.png",
+    "rating": 4.9
+  },
+  {
+    "id": 26,
+    "title": "Head First Design Patterns",
+    "author": "Freeman & Robson",
+    "description": "Engaging, visual introduction to software design patterns using real-world examples.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "img/techImg/tech-img-9.png",
+    "rating": 4.7
+  },
+  {
+    "id": 27,
+    "title": "The Sixth Extinction",
+    "author": "Elizabeth Kolbert",
+    "description": "An unsettling account of the current mass extinction, blending science and travelogue.",
+    "category": "Science",
+    "available_quantity": 10,
+    "image_url": "img/scienceImg/science-img-9.png",
+    "rating": 4.5
+  },
+  {
+    "id": 28,
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "description": "A coming-of-age mystery set in the marshes of North Carolina, about loneliness and resilience.",
+    "category": "Story",
+    "available_quantity": 20,
+    "image_url": "img/storyImg/story-img-10.png",
+    "rating": 4.6
+  },
+  {
+    "id": 29,
+    "title": "Database Internals",
+    "author": "Alex Petrov",
+    "description": "Deep dive into how modern databases work: storage engines, replication, and distributed systems.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "img/techImg/tech-img-10.png",
+    "rating": 4.8
+  },
+  {
+    "id": 30,
+    "title": "The Disappearing Spoon",
+    "author": "Sam Kean",
+    "description": "Entertaining stories behind the periodic table, from radioactive elements to quirky discoveries.",
+    "category": "Science",
+    "available_quantity": 12,
+    "image_url": "img/scienceImg/science-img-10.png",
+    "rating": 4.4
+  },
+  {
+    "id": 31,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A shepherd's journey to find treasure leads to profound wisdom about following one's dreams.",
+    "category": "Story",
+    "available_quantity": 18,
+    "image_url": "img/storyImg/story-img-11.png",
+    "rating": 4.3
+  },
+  {
+    "id": 32,
+    "title": "The DevOps Handbook",
+    "author": "Kim, Humble, Debois, Willis",
+    "description": "Practical guide to increase efficiency and reliability through DevOps principles.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "img/techImg/tech-img-11.png",
+    "rating": 4.7
+  },
+  {
+    "id": 33,
+    "title": "The Hidden Reality",
+    "author": "Brian Greene",
+    "description": "Explores parallel universes, multiverse theories, and the cutting edge of cosmology.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "img/scienceImg/science-img-11.png",
+    "rating": 4.5
+  },
+  {
+    "id": 34,
+    "title": "Norwegian Wood",
+    "author": "Haruki Murakami",
+    "description": "A nostalgic love story set in 1960s Tokyo, exploring memory, loss, and passion.",
+    "category": "Story",
+    "available_quantity": 13,
+    "image_url": "img/storyImg/story-img-12.png",
+    "rating": 4.2
+  },
+  {
+    "id": 35,
+    "title": "The Mythical Man-Month",
+    "author": "Frederick Brooks",
+    "description": "Classic essays on software engineering management, including the famous 'Brooks' law'.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "img/techImg/tech-img-12.png",
+    "rating": 4.6
+  },
+  {
+    "id": 36,
+    "title": "The Code Book",
+    "author": "Simon Singh",
+    "description": "History of cryptography from ancient times to quantum encryption, filled with intrigue.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "img/scienceImg/science-img-12.png",
+    "rating": 4.5
+  },
+  {
+    "id": 37,
+    "title": "The Nightingale",
+    "author": "Kristin Hannah",
+    "description": "Two sisters in WWII France struggle for survival and resistance against Nazi occupation.",
+    "category": "Story",
+    "available_quantity": 15,
+    "image_url": "img/storyImg/story-img-13.png",
+    "rating": 4.8
+  },
+  {
+    "id": 38,
+    "title": "Learning React",
+    "author": "Alex Banks & Eve Porcello",
+    "description": "Modern React fundamentals including hooks, context, and building full applications.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "img/techImg/tech-img-13.png",
+    "rating": 4.4
+  },
+  {
+    "id": 39,
+    "title": "The Vital Question",
+    "author": "Nick Lane",
+    "description": "Why life is the way it is, exploring energy, evolution, and the origins of complex cells.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "img/scienceImg/science-img-13.png",
+    "rating": 4.6
+  },
+  {
+    "id": 40,
+    "title": "The Shadow of the Wind",
+    "author": "Carlos Ruiz Zafón",
+    "description": "A labyrinthine mystery set in Barcelona's Cemetery of Forgotten Books, full of gothic intrigue.",
+    "category": "Story",
+    "available_quantity": 11,
+    "image_url": "img/storyImg/story-img-14.png",
+    "rating": 4.7
+  }
+]

@@ -2,12 +2,13 @@
 @import "@heroui/styles"; 
 @plugin "daisyui" {
    themes: light;
- }
+}
+
 
  .text {
     color: #2f2ebe;
  }
- .bg {
+ .bg-color {
     background-color: #6161c9;
  }
 
