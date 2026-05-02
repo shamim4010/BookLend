@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import Loading from "../loading";
 
 const booksPromise = async () => {
-  const res = await fetch('https://book-lend-blue.vercel.app/allbooks/books.json', {
+  const res = await fetch('https://book-lend-blue.vercel.app/books.json', {
     cache: 'no-store'
   });
   return await res.json();
