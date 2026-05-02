@@ -6,7 +6,7 @@
     "description": "A magical tale of a young girl who discovers a hidden forest where trees can speak and ancient secrets await.",
     "category": "Story",
     "available_quantity": 12,
-    "image_url": "img/storyImg/story-img-1.png",
+    "image_url": "/assets/storyImg/story-img-1.png",
     "rating": 4.5
   },
   {
@@ -16,7 +16,7 @@
     "description": "Comprehensive introduction to AI theory and practice, covering search algorithms, neural networks, and ethical considerations.",
     "category": "Tech",
     "available_quantity": 5,
-    "image_url": "img/techImg/tech-img-1.png",
+    "image_url": "/assets/tachImg/tach-img-1.png",
     "rating": 4.8
   },
   {
@@ -26,7 +26,7 @@
     "description": "Exploring the bizarre and fascinating world of quantum mechanics, from superposition to entanglement, for curious minds.",
     "category": "Science",
     "available_quantity": 8,
-    "image_url": "img/scienceImg/science-img-1.png",
+    "image_url": "/assets/scienceImg/science-img-1.png",
     "rating": 4.2
   },
   {
@@ -36,7 +36,7 @@
     "description": "A heartwarming story of an old keeper's final year on a remote island, and the young visitor who changes his life.",
     "category": "Story",
     "available_quantity": 15,
-    "image_url": "img/storyImg/story-img-2.png",
+    "image_url": "/assets/storyImg/story-img-2.png",
     "rating": 4.3
   },
   {
@@ -46,7 +46,7 @@
     "description": "Essential practices for writing readable, maintainable, and efficient code, with real-world examples.",
     "category": "Tech",
     "available_quantity": 3,
-    "image_url": "img/techImg/tech-img-2.png",
+    "image_url": "/assets/tachImg/tach-img-2.png",
     "rating": 4.9
   },
   {
@@ -56,7 +56,7 @@
     "description": "How the laws of physics give rise to order and complexity in the universe, from galaxies to life.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "img/scienceImg/science-img-2.png",
+    "image_url": "/assets/scienceImg/science-img-2.png",
     "rating": 4.1
   },
   {
@@ -66,7 +66,7 @@
     "description": "A young aviator's adventure across continents in the 1920s, filled with romance and danger.",
     "category": "Story",
     "available_quantity": 20,
-    "image_url": "img/storyImg/story-img-3.png",
+    "image_url": "/assets/storyImg/story-img-3.png",
     "rating": 4.4
   },
   {
@@ -76,7 +76,7 @@
     "description": "Timeless tips and techniques to become a better programmer, from debugging to automation.",
     "category": "Tech",
     "available_quantity": 9,
-    "image_url": "img/techImg/tech-img-3.png",
+    "image_url": "/assets/tachImg/tach-img-3.png",
     "rating": 4.7
   },
   {
@@ -86,7 +86,7 @@
     "description": "Reveals the complex social networks and communication systems of forests, blending biology and wonder.",
     "category": "Science",
     "available_quantity": 11,
-    "image_url": "img/scienceImg/science-img-3.png",
+    "image_url": "/assets/scienceImg/science-img-3.png",
     "rating": 4.6
   },
   {
@@ -96,7 +96,7 @@
     "description": "A mysterious story spanning centuries, connecting an artist, a thief, and a haunted house on the Thames.",
     "category": "Story",
     "available_quantity": 6,
-    "image_url": "img/storyImg/story-img-4.png",
+    "image_url": "/assets/storyImg/story-img-4.png",
     "rating": 4
   },
   {
@@ -106,7 +106,7 @@
     "description": "Reliable, scalable, and maintainable systems - from databases to distributed computing.",
     "category": "Tech",
     "available_quantity": 4,
-    "image_url": "img/techImg/tech-img-4.png",
+    "image_url": "/assets/tachImg/tach-img-4.png",
     "rating": 4.9
   },
   {
@@ -116,7 +116,7 @@
     "description": "A sweeping journey through the history, science, and ethical implications of genetics.",
     "category": "Science",
     "available_quantity": 13,
-    "image_url": "img/scienceImg/science-img-4.png",
+    "image_url": "/assets/scienceImg/science-img-4.png",
     "rating": 4.7
   },
   {
@@ -126,7 +126,7 @@
     "description": "A magical competition between two illusionists unfolds within a mysterious nocturnal circus.",
     "category": "Story",
     "available_quantity": 18,
-    "image_url": "img/storyImg/story-img-5.png",
+    "image_url": "/assets/storyImg/story-img-5.png",
     "rating": 4.5
   },
   {
@@ -136,7 +136,7 @@
     "description": "Focuses on the elegant features of JavaScript, helping developers avoid common pitfalls.",
     "category": "Tech",
     "available_quantity": 10,
-    "image_url": "img/techImg/tech-img-5.png",
+    "image_url": "/assets/tachImg/tach-img-5.png",
     "rating": 4.3
   },
   {
@@ -146,7 +146,7 @@
     "description": "Concise, witty explanations of the universe's biggest ideas, from the Big Bang to black holes.",
     "category": "Science",
     "available_quantity": 14,
-    "image_url": "img/scienceImg/science-img-5.png",
+    "image_url": "/assets/scienceImg/science-img-5.png",
     "rating": 4.8
   },
   {
@@ -156,7 +156,7 @@
     "description": "A breathtaking retelling of the Greek myth, focusing on the deep bond between Achilles and Patroclus.",
     "category": "Story",
     "available_quantity": 17,
-    "image_url": "img/storyImg/story-img-6.png",
+    "image_url": "/assets/storyImg/story-img-6.png",
     "rating": 4.9
   },
   {
@@ -166,7 +166,7 @@
     "description": "How Google runs production systems, with principles of automation, monitoring, and resilience.",
     "category": "Tech",
     "available_quantity": 2,
-    "image_url": "img/techImg/tech-img-6.png",
+    "image_url": "/assets/tachImg/tach-img-6.png",
     "rating": 4.6
   },
   {
@@ -176,7 +176,7 @@
     "description": "Groundbreaking exploration of cosmology, black holes, and the nature of time for general readers.",
     "category": "Science",
     "available_quantity": 8,
-    "image_url": "img/scienceImg/science-img-6.png",
+    "image_url": "/assets/scienceImg/science-img-6.png",
     "rating": 4.8
   },
   {
@@ -186,7 +186,7 @@
     "description": "Narrated by Death, this is the story of a young girl in Nazi Germany who steals books and shares them.",
     "category": "Story",
     "available_quantity": 19,
-    "image_url": "img/storyImg/story-img-7.png",
+    "image_url": "/assets/storyImg/story-img-7.png",
     "rating": 4.7
   },
   {
@@ -196,7 +196,7 @@
     "description": "Deep dive into JavaScript's core mechanics, demystifying scopes, closures, and the compiler.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "img/techImg/tech-img-7.png",
+    "image_url": "/assets/tachImg/tach-img-7.png",
     "rating": 4.4
   },
   {
@@ -206,7 +206,7 @@
     "description": "The true story of HeLa cells and the woman behind them, blending science, ethics, and humanity.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "img/scienceImg/science-img-7.png",
+    "image_url": "/assets/scienceImg/science-img-7.png",
     "rating": 4.5
   },
   {
@@ -216,7 +216,7 @@
     "description": "A spellbinding reimagining of the witch Circe's life, from exile to empowerment.",
     "category": "Story",
     "available_quantity": 14,
-    "image_url": "img/storyImg/story-img-8.png",
+    "image_url": "/assets/storyImg/story-img-8.png",
     "rating": 4.8
   },
   {
@@ -226,7 +226,7 @@
     "description": "Practical guide to container orchestration with Kubernetes, suitable for beginners and pros.",
     "category": "Tech",
     "available_quantity": 4,
-    "image_url": "img/techImg/tech-img-8.png",
+    "image_url": "/assets/tachImg/tach-img-8.png",
     "rating": 4.3
   },
   {
@@ -236,7 +236,7 @@
     "description": "Superstrings, hidden dimensions, and the quest for a unified theory of physics.",
     "category": "Science",
     "available_quantity": 11,
-    "image_url": "img/scienceImg/science-img-8.png",
+    "image_url": "/assets/scienceImg/science-img-8.png",
     "rating": 4.6
   },
   {
@@ -246,7 +246,7 @@
     "description": "Aging Hollywood icon reveals the scandalous truth behind her seven marriages and one true love.",
     "category": "Story",
     "available_quantity": 16,
-    "image_url": "img/storyImg/story-img-9.png",
+    "image_url": "/assets/storyImg/story-img-9.png",
     "rating": 4.9
   },
   {
@@ -256,7 +256,7 @@
     "description": "Engaging, visual introduction to software design patterns using real-world examples.",
     "category": "Tech",
     "available_quantity": 7,
-    "image_url": "img/techImg/tech-img-9.png",
+    "image_url": "/assets/tachImg/tach-img-9.png",
     "rating": 4.7
   },
   {
@@ -266,7 +266,7 @@
     "description": "An unsettling account of the current mass extinction, blending science and travelogue.",
     "category": "Science",
     "available_quantity": 10,
-    "image_url": "img/scienceImg/science-img-9.png",
+    "image_url": "/assets/scienceImg/science-img-9.png",
     "rating": 4.5
   },
   {
@@ -276,7 +276,7 @@
     "description": "A coming-of-age mystery set in the marshes of North Carolina, about loneliness and resilience.",
     "category": "Story",
     "available_quantity": 20,
-    "image_url": "img/storyImg/story-img-10.png",
+    "image_url": "/assets/storyImg/story-img-10.png",
     "rating": 4.6
   },
   {
@@ -286,7 +286,7 @@
     "description": "Deep dive into how modern databases work: storage engines, replication, and distributed systems.",
     "category": "Tech",
     "available_quantity": 3,
-    "image_url": "img/techImg/tech-img-10.png",
+    "image_url": "/assets/tachImg/tach-img-10.png",
     "rating": 4.8
   },
   {
@@ -296,7 +296,7 @@
     "description": "Entertaining stories behind the periodic table, from radioactive elements to quirky discoveries.",
     "category": "Science",
     "available_quantity": 12,
-    "image_url": "img/scienceImg/science-img-10.png",
+    "image_url": "/assets/scienceImg/science-img-10.png",
     "rating": 4.4
   },
   {
@@ -306,7 +306,7 @@
     "description": "A shepherd's journey to find treasure leads to profound wisdom about following one's dreams.",
     "category": "Story",
     "available_quantity": 18,
-    "image_url": "img/storyImg/story-img-11.png",
+    "image_url": "/assets/storyImg/story-img-11.png",
     "rating": 4.3
   },
   {
@@ -316,7 +316,7 @@
     "description": "Practical guide to increase efficiency and reliability through DevOps principles.",
     "category": "Tech",
     "available_quantity": 5,
-    "image_url": "img/techImg/tech-img-11.png",
+    "image_url": "/assets/tachImg/tach-img-11.png",
     "rating": 4.7
   },
   {
@@ -326,7 +326,7 @@
     "description": "Explores parallel universes, multiverse theories, and the cutting edge of cosmology.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "img/scienceImg/science-img-11.png",
+    "image_url": "/assets/scienceImg/science-img-11.png",
     "rating": 4.5
   },
   {
@@ -336,7 +336,7 @@
     "description": "A nostalgic love story set in 1960s Tokyo, exploring memory, loss, and passion.",
     "category": "Story",
     "available_quantity": 13,
-    "image_url": "img/storyImg/story-img-12.png",
+    "image_url": "/assets/storyImg/story-img-12.png",
     "rating": 4.2
   },
   {
@@ -346,7 +346,7 @@
     "description": "Classic essays on software engineering management, including the famous 'Brooks' law'.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "img/techImg/tech-img-12.png",
+    "image_url": "/assets/tachImg/tach-img-12.png",
     "rating": 4.6
   },
   {
@@ -356,7 +356,7 @@
     "description": "History of cryptography from ancient times to quantum encryption, filled with intrigue.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "img/scienceImg/science-img-12.png",
+    "image_url": "/assets/scienceImg/science-img-12.png",
     "rating": 4.5
   },
   {
@@ -366,7 +366,7 @@
     "description": "Two sisters in WWII France struggle for survival and resistance against Nazi occupation.",
     "category": "Story",
     "available_quantity": 15,
-    "image_url": "img/storyImg/story-img-13.png",
+    "image_url": "/assets/storyImg/story-img-13.png",
     "rating": 4.8
   },
   {
@@ -376,7 +376,7 @@
     "description": "Modern React fundamentals including hooks, context, and building full applications.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "img/techImg/tech-img-13.png",
+    "image_url": "/assets/tachImg/tach-img-13.png",
     "rating": 4.4
   },
   {
@@ -386,7 +386,7 @@
     "description": "Why life is the way it is, exploring energy, evolution, and the origins of complex cells.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "img/scienceImg/science-img-13.png",
+    "image_url": "/assets/scienceImg/science-img-13.png",
     "rating": 4.6
   },
   {
@@ -396,7 +396,7 @@
     "description": "A labyrinthine mystery set in Barcelona's Cemetery of Forgotten Books, full of gothic intrigue.",
     "category": "Story",
     "available_quantity": 11,
-    "image_url": "img/storyImg/story-img-14.png",
+    "image_url": "/assets/storyImg/story-img-14.png",
     "rating": 4.7
   }
 ]

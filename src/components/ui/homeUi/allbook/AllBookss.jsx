@@ -6,7 +6,7 @@ function AllBookss({booksDataP}) {
   const books = use(booksDataP)
   console.log(books)
   return (
-    <div>
+    <div className='grid place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
       {books.map(item => {
         return (
           <Cards key={item.id} item={item} />
