@@ -9,15 +9,15 @@ function Card({ item }) {
   const {data: session} = authClient.useSession();
 
   if(!session){
-    toast.warning('Please Login to access thw book details')
+    toast.warning('Please Login to access the book details')
   }
 
   return (
     <div className="card-side flex flex-col md:flex-row gap-8">
-      <figure className='w-90 h-120 rounded-lg'>
+      <figure className='w-400 h-120 rounded-lg'>
         <Image
           src={item.image_url}
-          alt={item.title} width="100" height="100" className='hover:scale-[1.1] transition-all duration-500 ease-smooth' />
+          alt={item.title} width="400" height="100" className='hover:scale-[1.1] transition-all duration-500 ease-smooth' />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-6xl font-bold">{item.title}</h2>

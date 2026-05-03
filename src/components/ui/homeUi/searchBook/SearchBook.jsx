@@ -1,0 +1,62 @@
+"use client";
+import { Button, Form, SearchField, Spinner } from "@heroui/react";
+import React from "react";
+
+function SearchBook({ setSearch }) {
+    const [value, setValue] = React.useState("");
+    const [isSubmitting, setIsSubmitting] = React.useState(false);
+    const MIN_LENGTH = 3;
+    const isInvalid = value.length > 0 && value.length < MIN_LENGTH;
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (value.length < MIN_LENGTH) {
+            return;
+        }
+        setIsSubmitting(true);
+        // Simulate API call
+        setTimeout(() => {
+            console.log("Search submitted:", { query: value });
+            setValue("");
+            setIsSubmitting(false);
+        }, 1500);
+    };
+    console.log(value)
+    setSearch(value)
+    return (
+        <Form className="flex bg-white lg:w-180 flex-wrap  rounded-4xl md:rounded-full justify-center items-center gap-4 p-4 mx-auto my-12 transition-all duration-400 ease-in-out" onSubmit={handleSubmit}>
+            <SearchField isRequired isInvalid={isInvalid} name="search" value={value} onChange={setValue}>
+                <SearchField.Group>
+                    <SearchField.SearchIcon />
+                    <SearchField.Input className="w-full" placeholder="Search products..." />
+                    <SearchField.ClearButton />
+                </SearchField.Group>
+            </SearchField>
+            <Button
+                className=""
+                isDisabled={value.length < MIN_LENGTH}
+                isPending={isSubmitting}
+                type="submit"
+                variant="primary"
+            >
+                {isSubmitting ? (
+                    <>
+                        <Spinner color="current" size="sm" />
+                        Searching...
+                    </>
+                ) : (
+                    "Search"
+                )}
+            </Button>
+            <fieldset className="rounded-md bg-white">
+                <select className="select bg-white w-full">
+                    <option onClick={() => setSearch('all')}>All Books</option>
+                    <option onClick={() => setSearch('Story')}>Story Books</option>
+                    <option onClick={() => setSearch('Tech')}>Tech Books</option>
+                    <option onClick={() => setSearch('Science')}>Science Books</option>
+                </select>
+            </fieldset>
+        </Form>
+    );
+}
+
+export default SearchBook

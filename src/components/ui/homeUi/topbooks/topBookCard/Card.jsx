@@ -6,7 +6,7 @@ import React from 'react'
 import { animated, useInView } from 'react-spring'
 import { toast } from 'react-toastify';
 
-function Cards({ item }) {
+function Card({ item }) {
   const [ref, springs] = useInView(
     () => ({
       from: {
@@ -65,4 +65,4 @@ function Cards({ item }) {
   )
 }
 
-export default Cards
+export default Card
