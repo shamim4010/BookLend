@@ -84,13 +84,14 @@ function Home() {
   return (
     <div>
       <HoomBanner />
-      <div className='my-12'>
+      <div className='my-24  '>
         <Marquee speed={50} direction="left" pauseOnHover={true} loop={0} gradient={false}>
           <span className="flex gap-4">
             {marqueeText}
           </span>
         </Marquee>
       </div>
+      <h2 className='text-3xl font-semibold my-6'>Top 4 Collection</h2>
       <Suspense fallback={<Loading />}>
         <TopBooks {...{ booksData }} />
       </Suspense>

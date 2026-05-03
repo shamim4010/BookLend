@@ -27,7 +27,7 @@ function Navbar() {
     </>
 
     return (
-        <div className="navbar px-24 fixed z-100 w-full bg-gray-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50">
+        <div className="navbar px-6 sm:px-12 md:px-24 fixed z-100 w-full bg-gray-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,7 +47,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                {isPending ? 'Loading': userInfo ? <div className='flex justify-center items-center gap-4'><div className='w-10 h-10 flex justify-center items-center overflow-hidden border-2 border-indigo-500 rounded-full'><Image src={userInfo.image} width={100} height='100' alt={userInfo.name} /></div> <button onClick={logOut} className='btn border-none bg-color text-white '>LogOut</button></div> : <Link href="/auth/login" className="btn btn-sm bg-color border-none text-white rounded-sm">Login</Link>}
+                {isPending ? 'Loading': userInfo ? <div className='flex justify-center items-center gap-4'><div className='w-10 h-10 flex justify-center items-center overflow-hidden border-2 border-indigo-500 rounded-full hidden sm:block'><Image src={userInfo.image} width={100} height='100' alt={userInfo.name} /></div> <button onClick={logOut} className='btn border-none bg-color text-white '>LogOut</button></div> : <Link href="/auth/login" className="btn btn-sm bg-color border-none text-white rounded-sm">Login</Link>}
             </div>
         </div>
     )
