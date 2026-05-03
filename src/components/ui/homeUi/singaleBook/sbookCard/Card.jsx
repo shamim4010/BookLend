@@ -1,20 +1,38 @@
 'use client'
-import { authClient} from '@/lib/auth-client'
+import { authClient } from '@/lib/auth-client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaBookOpen, FaStar } from 'react-icons/fa'
 import { toast } from 'react-toastify';
 
 function Card({ item }) {
-  const {data: session} = authClient.useSession();
+  const [book, setBook] = useState([]);
+  const { data: session } = authClient.useSession();
 
-  if(!session){
+  if (!session) {
     toast.warning('Please Login to access the book details')
   }
 
+  useEffect(() => {
+    const bookD = JSON.parse(localStorage.getItem('bookData')) || [];
+    setBook(bookD);
+  }, [])
+
+  const dataSend = () => {
+    const newBooks = [...book, item]
+    localStorage.setItem("bookData", JSON.stringify(newBooks));
+
+    toast.success("Buy successFull")
+  }
+
+  console.log(book)
+
+  const isBook = [...book].find(itemJ => itemJ.id === item.id)
+  console.log(isBook? isBook.id : '')
+
   return (
     <div className="card-side flex flex-col md:flex-row gap-8">
-      <figure className='w-400 h-120 rounded-lg'>
+      <figure className='w-110 sm:w-140 md:w-500 h-120  rounded-lg'>
         <Image
           src={item.image_url}
           alt={item.title} width="400" height="100" className='hover:scale-[1.1] transition-all duration-500 ease-smooth' />
@@ -41,7 +59,7 @@ function Card({ item }) {
         <br />
         <span className='font-semibold w-30 text-center rounded-2xl p-1 bg-indigo-300 opacity-70'><div aria-label="status" className="status bg-green-800 rounded-full mr-1"></div> {item.available_quantity} copies left</span>
         <div className="card-actions mt-3">
-          <button className="btn border-none bg-color text-white hover:scale-[1.05] transition-all duration-500 ease-smooth"><FaBookOpen /> Order This Book</button>
+          <button onClick={dataSend} className={`px-4 py-2 flex justify-center items-center gap-2 rounded-lg border-none bg-color text-white hover:scale-[1.05] transition-all duration-500 ease-smooth ${isBook? isBook.id === item.id && 'cursor-not-allowed opacity-60':''} `} disabled={isBook? isBook.id === item.id: false}><FaBookOpen /> {isBook? isBook.id === item.id && "Alredy Buy" : "Order This Book"}</button>
         </div>
       </div>
     </div>
