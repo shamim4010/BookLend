@@ -16,7 +16,7 @@ function AllBooks() {
   const [search, setSearch] = useState('');
   const booksDataP = booksPromise()
   console.log(booksDataP)
-  console.log(search)
+  console.log('shamim', search)
   return (
     <div>
       <BookBanner />

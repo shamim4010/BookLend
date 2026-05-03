@@ -16,12 +16,10 @@ function SearchBook({ setSearch }) {
         // Simulate API call
         setTimeout(() => {
             console.log("Search submitted:", { query: value });
-            setValue("");
             setIsSubmitting(false);
         }, 1500);
     };
-    console.log(value)
-    setSearch(value)
+    
     return (
         <Form className="flex bg-white lg:w-180 flex-wrap  rounded-4xl md:rounded-full justify-center items-center gap-4 p-4 mx-auto my-12 transition-all duration-400 ease-in-out" onSubmit={handleSubmit}>
             <SearchField isRequired isInvalid={isInvalid} name="search" value={value} onChange={setValue}>
@@ -32,6 +30,7 @@ function SearchBook({ setSearch }) {
                 </SearchField.Group>
             </SearchField>
             <Button
+                onClick={() => setSearch(value)}
                 className=""
                 isDisabled={value.length < MIN_LENGTH}
                 isPending={isSubmitting}
@@ -49,7 +48,7 @@ function SearchBook({ setSearch }) {
             </Button>
             <fieldset className="rounded-md bg-white">
                 <select className="select bg-white w-full">
-                    <option onClick={() => setSearch('all')}>All Books</option>
+                    <option onClick={() => setSearch('')}>All Books</option>
                     <option onClick={() => setSearch('Story')}>Story Books</option>
                     <option onClick={() => setSearch('Tech')}>Tech Books</option>
                     <option onClick={() => setSearch('Science')}>Science Books</option>
