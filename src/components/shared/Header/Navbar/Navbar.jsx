@@ -2,7 +2,7 @@
 import { authClient } from '@/lib/auth-client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { redirect, usePathname } from 'next/navigation'
 import React from 'react'
 import { FaBookOpen, FaHome, FaRegUserCircle } from 'react-icons/fa'
 import { GiSpellBook } from 'react-icons/gi'
@@ -14,6 +14,11 @@ function Navbar() {
     console.log(session)
 
     const userInfo = session?.user;
+
+    const logOut = async () => {
+        await authClient.signOut();
+        redirect('/auth/login')
+    }
 
     const liLinks = <>
         <li><Link href='/' className={pathName === '/' ? 'text border-b-2 border-[#2f2ebe] navAnimat rounded-none': ''}><FaHome /> Home</Link></li>
@@ -42,7 +47,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                {isPending ? 'Loading': userInfo ? <div className='flex justify-center items-center gap-4'><div className='w-10 h-10 flex justify-center items-center overflow-hidden border-2 border-indigo-500 rounded-full'><Image src={userInfo.image} width={100} height='100' alt={userInfo.name} /></div> <button onClick={async () => await authClient.signOut()} className='btn border-none bg-color text-white '>LogOut</button></div> : <Link href="/auth/login" className="btn btn-sm bg-color border-none text-white rounded-sm">Login</Link>}
+                {isPending ? 'Loading': userInfo ? <div className='flex justify-center items-center gap-4'><div className='w-10 h-10 flex justify-center items-center overflow-hidden border-2 border-indigo-500 rounded-full'><Image src={userInfo.image} width={100} height='100' alt={userInfo.name} /></div> <button onClick={logOut} className='btn border-none bg-color text-white '>LogOut</button></div> : <Link href="/auth/login" className="btn btn-sm bg-color border-none text-white rounded-sm">Login</Link>}
             </div>
         </div>
     )

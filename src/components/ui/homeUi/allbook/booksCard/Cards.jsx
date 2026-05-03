@@ -57,7 +57,7 @@ function Cards({ item }) {
           <h2 className="card-title">{item.title}</h2>
           <p>Click the button to watch on Jetflix app.</p>
           <div className="card-actions justify-end">
-            {session ? <Link href={`/book/${item.title}`} className="btn btn-primary">More Details</Link> : <button onClick={bookDetails} className="btn btn-primary">More Details</button>}
+            {session ? <Link href={`/book/${item.title}`} className="btn border-none bg-indigo-100 hover:bg-indigo-500">More Details</Link> : <button onClick={bookDetails} className="btn border-none bg-indigo-100 hover:bg-indigo-500">More Details</button>}
           </div>
         </div>
       </div>
