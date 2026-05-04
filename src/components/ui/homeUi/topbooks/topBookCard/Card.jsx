@@ -56,6 +56,7 @@ function Card({ item }) {
         <div className="card-body">
           <h2 className="card-title">{item.title}</h2>
           <p className='line-clamp-3'>{item.description}</p>
+          <p className='bg-[#6161c969] text rounded-2xl w-20 py-1 text-center'>{item.category}</p>
           <div className="card-actions justify-end">
             {session ? <Link href={`/book/${item.title}`} className="btn border-none bg-indigo-100 hover:bg-indigo-500">More Details</Link> : <button onClick={bookDetails} className="btn border-none bg-indigo-100 hover:bg-indigo-500">More Details</button>}
           </div>

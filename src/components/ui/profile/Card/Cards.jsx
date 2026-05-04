@@ -21,6 +21,7 @@ function Cards({ item }) {
           <Card.Description>
             by {item.author}
           </Card.Description>
+          <p className='bg-[#6161c969] text rounded-2xl w-20 py-1 text-center'>{item.category}</p>
         </Card.Header>
         <Card.Footer className="mt-auto flex w-full flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col">
