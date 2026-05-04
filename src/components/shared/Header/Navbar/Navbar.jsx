@@ -23,7 +23,7 @@ function Navbar() {
     const liLinks = <>
         <li><Link href='/' className={pathName === '/' ? 'text border-b-2 border-[#2f2ebe] navAnimat rounded-none': ''}><FaHome /> Home</Link></li>
         <li><Link href='/allbooks' className={pathName === '/allbooks' ? 'text border-b-2 border-[#2f2ebe] navAnimat rounded-none': ''}><FaBookOpen /> All Books</Link></li>
-        <li><Link href='/profile' className={pathName === '/profile' ? 'text border-b-2 border-[#2f2ebe] navAnimat rounded-none': ''}><FaRegUserCircle /> My Profile</Link></li>
+        <li><Link href={`${userInfo ? '/profile' : '/auth/login'}`} className={['/profile' , '/auth/login'].includes(pathName) ? 'text border-b-2 border-[#2f2ebe] navAnimat rounded-none': ''}><FaRegUserCircle /> My Profile</Link></li>
     </>
 
     return (
