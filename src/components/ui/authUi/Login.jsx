@@ -5,7 +5,7 @@ import { Button, Description, FieldError, Form, Input, Label, TextField } from "
 import Link from 'next/link';
 import { authClient } from '@/lib/auth-client';
 import { toast, ToastContainer } from 'react-toastify';
-import { FaHome, FaTachometerAlt } from 'react-icons/fa';
+import { FaHome} from 'react-icons/fa';
 
 function Login() {
   const onSubmit = async (e) => {
@@ -42,7 +42,7 @@ function Login() {
   }
 
   return (
-    <div className='w-[90%] sm:w-[80%] lg:w-[60%] h-[80%] bg-white flex flex-col justify-center items-center gap-12 p-12 rounded-3xl shadow-[0_0_12px_rgba(47,46,190,0.2)]'>
+    <div className='w-[90%] sm:w-[80%] lg:w-[60%] h-[80%] bg-white flex flex-col justify-center items-center gap-4 p-12 rounded-3xl shadow-[0_0_12px_rgba(47,46,190,0.2)]'>
       <div className='flex flex-col gap-4'>
         <h2 className="text-4xl text-gray-900 font-medium">Login</h2>
         <p className="text-sm text-gray-500/90 mt-3">Welcome back! Please Login to continue</p>
@@ -105,8 +105,7 @@ function Login() {
           </div>
         </Form>
       </div>
-      <div className='flex justify-center items-center gap-8'>
-        <FaTachometerAlt className='text-7xl' />
+      <div className='flex justify-center items-center'>
         <Link href="/" className='btn border-none bg-color text-white'><FaHome /> Go Home</Link>
       </div>
       <ToastContainer />
