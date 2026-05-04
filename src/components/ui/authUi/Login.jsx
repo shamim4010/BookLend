@@ -5,6 +5,7 @@ import { Button, Description, FieldError, Form, Input, Label, TextField } from "
 import Link from 'next/link';
 import { authClient } from '@/lib/auth-client';
 import { toast, ToastContainer } from 'react-toastify';
+import { FaHome } from 'react-icons/fa';
 
 function Login() {
   const onSubmit = async (e) => {
@@ -103,6 +104,9 @@ function Login() {
             <p className="text-gray-500/90 text-sm mt-4">Don't have an account? <Link href="/auth/register" className="text-indigo-400 hover:underline">Register</Link></p>
           </div>
         </Form>
+      </div>
+      <div className='flex justify-center'>
+        <Link className='btn border-none bg-color text-white'><FaHome /> Go Home</Link>
       </div>
       <ToastContainer />
     </div>
