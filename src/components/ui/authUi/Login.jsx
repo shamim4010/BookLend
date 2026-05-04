@@ -106,7 +106,7 @@ function Login() {
         </Form>
       </div>
       <div className='flex justify-center'>
-        <Link className='btn border-none bg-color text-white'><FaHome /> Go Home</Link>
+        <Link href="/" className='btn border-none bg-color text-white'><FaHome /> Go Home</Link>
       </div>
       <ToastContainer />
     </div>
