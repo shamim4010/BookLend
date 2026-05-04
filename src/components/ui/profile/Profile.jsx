@@ -6,9 +6,11 @@ import React, { useState } from 'react'
 import { Card } from "@heroui/react";
 import { FaUserEdit } from 'react-icons/fa';
 import { authClient } from "@/lib/auth-client";
+import Cards from "./Card/Cards";
 
-function Profile({ userInfo }) {
+function Profile({ userInfo, book }) {
   const [isProfile, setIsProfile] = useState(false);
+  const books = [...book]
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -68,12 +70,22 @@ function Profile({ userInfo }) {
         <Card.Footer className="mt-auto flex w-full flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col text-center">
             <span className="text-sm opacity-70 font-medium text-foreground">Total Buy</span>
-            <span className="text-2xl">8</span>
+            <span className="text-2xl">{book.length}</span>
           </div>
           <Button onClick={()=> setIsProfile(true)} className="w-full sm:w-auto bg-color"><FaUserEdit /> Edit Prpfile</Button>
         </Card.Footer>
       </div>
     </Card>}
+    <div className="py-24">
+      <h2 className="text-3xl my-12">Borrowed Books</h2>
+      <div className="flex flex-col gap-4 w-200 mx-auto">
+        {books.map(item => {
+          return (
+            <Cards key={item.id} {...{item}} />
+          )
+        })}
+      </div>
+    </div>
     </div>
   )
 }
